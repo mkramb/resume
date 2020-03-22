@@ -1,0 +1,189 @@
+% LaTeX source of my resume
+% =========================
+
+% Commented for easy reuse... ;)
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+% start a document with the here given default font size and paper size
+\documentclass[10pt,a4paper]{article}
+
+% include the `tex` instructions that takes care of loading packages and defining commands
+\include{resume}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+% Contact
+
+\maintitle{Mitja Kramberger}{Engineering Lead \& Consultant Engineer}  % title on top of the document
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+\noindent
+mitja.kramberger@gmail.com\sbull
+07874322134\sbull
+\href{http://github.com/mkramb}{github.com/mkramb}
+
+% Summary
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+\roottitle{Summary}  % a root section title
+\vspace{-0em}  % some vertical spacing
+
+\noindent I'm a methodical, quality­ focused full stack software developer who specialises in front-end web app, hybrid app, and RESTful API development. 
+\noindent Experienced and highly proficient in platform architecting, highly versed in agile development practices and delivering high quality maintainable tested code. 
+\noindent In addition, I possess excellent communication and client-facing skills. I have also held tech leading positions and executed my roles successfully, working well under pressure, results driven.
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Specialties:}
+  {Full-stack architecture and implementation using TypeScript, React, Node.js, Kubernetes and Serverless.}
+
+\spacedhrule{1.5em}{-0.4em}
+
+% Highlights
+
+\roottitle{Highlights}
+
+\begin{indentsection}
+\item
+\begin{itemize}[leftmargin=0cm]
+    \item \textbf{DevOps and Agile} I have enabled workflows that would normally take hours to run, to run in under a minute, using cloud services and improving build tools across the organisation. DevOps is Agile applied beyond the software team.
+    \item \textbf{Courage to spark change} A good example is winning {\href{https://youtu.be/gdmrfGAZB0g?t=415}{hackathon at Atlassian}} and successfully shipping it. Continuous improvement is a shared responsibility, but action is an independent one. 
+    \item \textbf{Entrepreneurial experience} I was an early employee at startup {\href{https://www.linkedin.com/company/doublerecall}{DoubleRecall}} which was accepted into {\href{https://www.ycombinator.com/}{YCombinator incubator}}
+    and also started few services which are now archived on github.
+\end{itemize}
+\end{indentsection}
+
+\spacedhrule{0.9em}{-0.4em} 
+
+% Experience
+
+\roottitle{Experience}
+
+\headedsection
+  {\href{http://www.photobox.com}{Photobox}}
+  {\textsc{London, United Kingdom}} {%
+
+  \headedsubsection
+    {Principal Engineer}
+    {Apr \apo19 -- Present}
+    {\bodytext{
+    \begin{itemize}[leftmargin=0cm]
+      \item Lead implementation of the {\href{https://www.photobox.co.uk/range/editor}{Photobox Editor}} experience and advised on technical direction across the group.
+      \item Onboarded a new team of contributors and introduced modern software engineering practices.
+    \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{https://www.cloudbees.com}{Cloudbees}}
+  {\textsc{London, United Kingdom}} {%
+  \headedsubsection
+    {Senior Engineer}
+    {Jun \apo18 -- Apr \apo19}
+    {\bodytext{
+    \begin{itemize}[leftmargin=0cm]
+      \item Lead the UI implementation for internal product kubeCD, which is now official addon for {\href{https://jenkins-x.io}{JenkinsX}}.
+      \item Authored Component library based on internal {\href{https://codeship.github.io/shipyard/methodology}{styleguide Shipyard}}.
+    \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{https://www.jpmorgan.com/country/uk/en/jpmorgan}{JPMorgan Chase \& Co.}}
+  {\textsc{London, United Kingdom}} {%
+  \headedsubsection
+    {VP Consultant}
+    {Oct \apo17 -- May \apo18}
+    {\bodytext{
+    \begin{itemize}[leftmargin=0cm]
+      \item Advised on the technical direction of the group and provided solutions to difficult organisational problems.
+      \item Authored DevOps pipeline (kubernetes), which allowed feature builds and simplified deployment process.
+    \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{https://www.lab49.com}{Lab49}}
+  {\textsc{London, United Kingdom}} {%
+  \headedsubsection
+    {Senior Consultant}
+    {May \apo17 -- Oct \apo17}
+    {\bodytext{
+    \begin{itemize}[leftmargin=0cm]
+      \item Lead UI implementation for internal {\href{https://www.investopedia.com/terms/m/mifid-ii.asp}{MIFID2 project}}.
+      \item Worked on complex UI components and integrations with ION platform.
+    \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{https://www.publicissapient.com}{Sapient Global Markets}}
+  {\textsc{London, United Kingdom}} {%
+  \headedsubsection
+    {Manager Interactive Development}
+    {Aug \apo16 -- May \apo17}
+    {\bodytext{
+    \begin{itemize}[leftmargin=0cm]
+      \item Authored development of internal web accelerator, which helped engineers starting a new project, accross the group. 
+      \item Worked on PSD2 directive implementation for Lloyds at their Payments team, as a technical lead.
+    \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{https://www.lloydsbank.com}{Lloyds Banking Group}}
+  {\textsc{London, United Kingdom}} {%
+  \headedsubsection
+    {Technical Lead}
+    {Apr \apo16 -- Aug \apo16}
+    {\bodytext{
+    \begin{itemize}[leftmargin=0cm]
+      \item Lead multiple UI focused teams, maintaining their build pipelines and supporting group Agile environment.
+      \item Contributed to Lloyds skeleton app (initial code for all projects) and global UI Components library.
+    \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{http://go.sky.com}{Sky}}
+  {\textsc{London, United Kingdom}} {%
+  \headedsubsection
+  {Senior Engineer}
+    {Jun \apo15 -- Apr \apo16}
+    {\bodytext{
+    \begin{itemize}[leftmargin=0cm]
+      \item Lead delivery for video on demand system and live content, by building their {\href{http://go.sky.com}{advanced SPA client}}.
+      \item Advocated for technology excellence and ensuring that we follow the best practice.
+    \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{https://www.atlassian.com}{Atlassian Software Systems}}
+  {\textsc{Sydney, Australia}} {%
+  \headedsubsection
+  {Senior Engineer}
+    {Jun \apo15 -- Apr \apo16}
+    {\bodytext{
+    \begin{itemize}[leftmargin=0cm]
+      \item Lead UI implementation of industry leading CI/CD server, {\href{https://www.atlassian.com/software/bamboo}{Atlassian Bamboo}}.
+      \item Ensuring we followed UI best practices and acted as a feature lead (across the whole technical stack).
+    \end{itemize}
+    }}
+}
+
+\begin{center}
+  \emph{Please refer to \href{http://www.linkedin.com/in/mkramb}{my Linkedin profile} for the complete list of work experiences.}
+\end{center}
+
+\spacedhrule{0em}{-0.4em}
+
+% Interests
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {}
+  {Startups, Video streaming, Compiler design.}
+
+\end{document}
