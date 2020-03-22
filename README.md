@@ -10,5 +10,5 @@ brew cask install font-linux-libertine font-tex-gyre-pagella font-tex-gyre-pagel
 ## Usage
 
 ```
-pdflatex pdflatex mitja.kramberger-resume.tex
+pdflatex mitja.kramberger-resume.tex
 ```
