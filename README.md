@@ -3,8 +3,9 @@
 ## Setup
 
 ```
-brew install --cask mactex
-brew install --cask font-linux-libertine font-tex-gyre-pagella font-tex-gyre-pagella-math
+brew install mactex
+brew tap homebrew/cask-fonts
+brew install font-linux-libertine font-tex-gyre-pagella font-tex-gyre-pagella-math
 ```
 
 ## Usage
